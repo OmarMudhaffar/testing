@@ -1,0 +1,15 @@
+<br>
+
+<div class="container">
+  <div class="card" *ngFor="let item of list | async">
+    <div class="card-header">
+      {{item.payload.val().title}}
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>{{item.payload.val().sub}}</p>
+        <footer (click)="show(item.key,item.payload.val().title,item.payload.val().sub)" class="blockquote-footer"> View Details </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>

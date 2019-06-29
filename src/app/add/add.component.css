@@ -1,0 +1,15 @@
+.card {
+    padding: 20px;
+}
+
+.card input,.card textarea {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 200px;
+}
